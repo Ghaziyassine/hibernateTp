@@ -30,6 +30,8 @@ Le projet H3 vise à mettre en place une application de gestion de projets. Il c
 - Création d'une interface générique `IDao` et de classes de service (ProjetService, TacheService, EmployeService, EmployeTacheService).
 - Implémentation de diverses méthodes pour gérer les projets, les tâches et les employés.
 - Tests complets pour vérifier le bon fonctionnement des fonctionnalités.
+### Conception du Projet
+![image](https://github.com/Ghaziyassine/hibernateTp/assets/114885285/a10eb553-b9c5-4a65-8edc-1b80af5f1fef)
 
 ### Structure du Projet
 - `src/main/java/ma.projet.classes` : Entités pour les projets, les tâches et les employés.
@@ -44,6 +46,8 @@ Le projet H3 vise à mettre en place une application de gestion de projets. Il c
 ### Objectif
 Le projet Tar vise à développer une application de gestion de l'état civil des citoyens d'une province. Il inclut les entités `Personne`, `Femme`, `Homme`, et `Mariage`, ainsi que des fonctionnalités pour la gestion des données relatives à l'état civil.
 
+### Concepetion du Projet
+![image](https://github.com/Ghaziyassine/hibernateTp/assets/114885285/dd1e845f-7897-45c6-a398-ee52a1e3a746)
 
 ### Structure du Projet
 
