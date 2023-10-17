@@ -42,15 +42,32 @@ Le projet H3 vise à mettre en place une application de gestion de projets. Il c
 ## Tar - Gestion de Projets (Variante)
 
 ### Objectif
-Le projet Tar est une variante du projet H3 avec des fonctionnalités similaires. Il comprend également des fonctionnalités pour la gestion de projets, de tâches et d'employés.
+Le projet Tar vise à développer une application de gestion de l'état civil des citoyens d'une province. Il inclut les entités `Personne`, `Femme`, `Homme`, et `Mariage`, ainsi que des fonctionnalités pour la gestion des données relatives à l'état civil.
+
 
 ### Structure du Projet
-- `src/main/java/ma.projet.beans` : Entités pour les projets, les tâches et les employés.
-- `src/main/java/ma.projet.config` : Fichier de configuration Hibernate.
-- `src/main/java/ma.projet.util` : Classe `HibernateUtil`.
-- `src/main/java/ma.projet.dao` : Interface `IDao`.
-- `src/main/java/ma.projet.services` : Classes de service (ProjetService, TacheService, EmployeService, EmployeTacheService).
-- `src/test/java` : Tests unitaires.
+
+#### Couche de Persistance
+1. **Classes Entités** : Dans le package `ma.projet.beans`, les classes entités (`Personne`, `Femme`, `Homme`, `Mariage`) sont développées avec les annotations Hibernate appropriées. Les annotations Hibernate, telles que `@Entity`, `@Id`, `@GeneratedValue`, `@Table`, et autres, sont utilisées pour définir la structure des entités.
+
+2. **Configuration Hibernate** : Un fichier de configuration `hibernate.cfg.xml` est créé dans le package `ma.projet.config` pour configurer Hibernate et définir les paramètres de connexion à la base de données MySQL.
+
+3. **Classe HibernateUtil** : Une classe `HibernateUtil` est mise en place dans le package `ma.projet.util` pour gérer la SessionFactory de Hibernate.
+
+4. **Base de Données MySQL** : La base de données est générée en utilisant les entités et les annotations définies dans le projet.
+
+#### Couche Service
+- Une interface générique `IDao<T>` est créée dans le package `ma.projet.dao`.
+
+1. **Classes de Service** : Trois classes de service sont mises en place : `HommeService`, `FemmeService`, et `MariageService`. Ces classes implémentent l'interface `IDao` et sont responsables de la gestion des données relatives aux hommes, femmes, et mariages.
+
+2. **Affichage des Épouses** : Dans la classe `HommeService`, une méthode est créée pour afficher les épouses d'un homme passé en paramètre entre deux dates spécifiées.
+
+3. **Requête Native** : Une requête native nommée est créée pour renvoyer le nombre d'enfants d'une femme donnée entre deux dates.
+
+4. **Utilisation de la Requête** : Une méthode est ajoutée dans la classe `FemmeService` pour utiliser la requête native créée précédemment.
+
+5. **Requête Nommée pour les Mariages Multiples** : Une requête nommée est créée pour renvoyer les femmes mariées deux fois ou plus.
 
 ## Comment Exécuter les Projets
 
