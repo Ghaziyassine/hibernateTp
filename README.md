@@ -45,11 +45,11 @@ Le projet H3 vise à mettre en place une application de gestion de projets. Il c
 Le projet Tar est une variante du projet H3 avec des fonctionnalités similaires. Il comprend également des fonctionnalités pour la gestion de projets, de tâches et d'employés.
 
 ### Structure du Projet
-- `src/main/java/ma.projet.classes` : Entités pour les projets, les tâches et les employés.
+- `src/main/java/ma.projet.beans` : Entités pour les projets, les tâches et les employés.
 - `src/main/java/ma.projet.config` : Fichier de configuration Hibernate.
 - `src/main/java/ma.projet.util` : Classe `HibernateUtil`.
 - `src/main/java/ma.projet.dao` : Interface `IDao`.
-- `src/main/java/ma.projet.service` : Classes de service (ProjetService, TacheService, EmployeService, EmployeTacheService).
+- `src/main/java/ma.projet.services` : Classes de service (ProjetService, TacheService, EmployeService, EmployeTacheService).
 - `src/test/java` : Tests unitaires.
 
 ## Comment Exécuter les Projets
@@ -64,4 +64,3 @@ Le projet Tar est une variante du projet H3 avec des fonctionnalités similaires
 
 Assurez-vous de respecter les dépendances et les prérequis nécessaires pour exécuter ces projets, notamment les bibliothèques Hibernate-JPA et le pilote MySQL.
 
-Bonne utilisation !
