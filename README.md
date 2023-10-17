@@ -2,7 +2,7 @@
 
 Ce référentiel contient trois projets Hibernate (H1, H3 et Tar) destinés à la gestion de produits et de projets. Chaque projet est conçu pour répondre à des besoins spécifiques. Voici une description complète de chacun d'eux :
 
-## H1 - Gestion de Produits
+## H1 
 
 ### Objectif
 Le projet H1 vise à créer une application de gestion de produits. Il comprend les fonctionnalités suivantes :
@@ -20,7 +20,7 @@ Le projet H1 vise à créer une application de gestion de produits. Il comprend 
 - `src/main/java/ma.projet.service` : Classe `ProduitService`.
 - `src/test/java` : Tests unitaires.
 
-## H3 - Gestion de Projets
+## H3 
 
 ### Objectif
 Le projet H3 vise à mettre en place une application de gestion de projets. Il comprend les fonctionnalités suivantes :
@@ -41,7 +41,7 @@ Le projet H3 vise à mettre en place une application de gestion de projets. Il c
 - `src/main/java/ma.projet.service` : Classes de service (ProjetService, TacheService, EmployeService, EmployeTacheService).
 - `src/test/java` : Tests unitaires.
 
-## Tar - Gestion de Projets (Variante)
+## Tar 
 
 ### Objectif
 Le projet Tar vise à développer une application de gestion de l'état civil des citoyens d'une province. Il inclut les entités `Personne`, `Femme`, `Homme`, et `Mariage`, ainsi que des fonctionnalités pour la gestion des données relatives à l'état civil.
